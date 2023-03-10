@@ -6,8 +6,7 @@
 //
 
 #include <iostream>
-#include "linearList.h"
-
+#include "linearList.cpp"
 int main(int argc, const char * argv[]) {
     // insert code here...
     /*
@@ -58,5 +57,6 @@ int main(int argc, const char * argv[]) {
     merge(alist, blist);
     alist.print();//7:8.5,6.2,4.5,1.5,1.3,0.4,0.1
     */
+   system("pause");
     return 0;
 }

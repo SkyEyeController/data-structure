@@ -21,7 +21,6 @@ public:
 };
 
 class linkList;
-
 class listNode{
     friend class linkList;
     friend void merge(linkList&, linkList&);
@@ -57,7 +56,12 @@ public:
     void ascendingOrder();                      //升序
     void reverse();                             //倒排
     void print();                               //打印元素
-    
+    linkList operator+(const linkList &b)
+    {
+        lastNode->next=b.firstNode->next;
+        listSize+=b.listSize;
+        return *this;
+    }
 };
 
 void merge(linkList&, linkList&);
